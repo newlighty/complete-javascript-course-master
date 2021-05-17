@@ -174,9 +174,16 @@
 //////////////////////////////////
 
 // array
-const friend = ['Michael', 'steven', 'peter'];
+const friend = ['Michael', 'steven', 'peter' ]; 
 console.log(friend);
 
 // another way of define array
 
 const year = new Array(1981, 1984, 2008, 2020);
+
+console.log(friend[0]);
+console.log(year[0]);
+console.log(friend[0] ,year [0]);
+
+console.log(friend.length);
+console.log(friend[friend.length -1]);
