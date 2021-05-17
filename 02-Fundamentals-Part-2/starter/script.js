@@ -142,32 +142,41 @@
 
 
 //this part work independent
-const calcAverage = (a, b, c) => (a + b + c) / 3;
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
 
-let scoreDolphins = calcAverage(44, 23, 71);
-let scoreKoalas = calcAverage(90, 54, 160);
+// let scoreDolphins = calcAverage(44, 23, 71);
+// let scoreKoalas = calcAverage(90, 54, 160);
 //this part work independent and u do not need to use scoreDolphins to get result 
 // and u can get result with any number that mach the if conditions
 
-const checkWinner = function (avgDolhins, avgKoalas) {
-    if (avgDolhins >= 2 * avgKoalas) {
-        console.log(`Dolphins Wins 🏆 (${avgDolhins} vs. ${avgKoalas})`);
-    } else if (avgKoalas >= 2 * avgDolhins) {
-        console.log(`Koalas Wins 🏆 (${avgKoalas} vs. ${avgDolhins})`);
+// const checkWinner = function (avgDolhins, avgKoalas) {
+//     if (avgDolhins >= 2 * avgKoalas) {
+//         console.log(`Dolphins Wins 🏆 (${avgDolhins} vs. ${avgKoalas})`);
+//     } else if (avgKoalas >= 2 * avgDolhins) {
+//         console.log(`Koalas Wins 🏆 (${avgKoalas} vs. ${avgDolhins})`);
 
-    } else {
-        console.log('No Team Wins');
-    }
-}
+//     } else {
+//         console.log('No Team Wins');
+//     }
+// }
 
-checkWinner(scoreDolphins, scoreKoalas);
+// checkWinner(scoreDolphins, scoreKoalas);
 //hear we use random number and it works;
-checkWinner(600, 110);
+// checkWinner(600, 110);
 
 
 
 //test 2 
-scoreDolphins = calcAverage (85, 54, 41);
-scoreKoalas = calcAverage (23, 34, 27);
-console.log(scoreDolphins, scoreKoalas);
-checkWinner(scoreDolphins, scoreKoalas);
+// scoreDolphins = calcAverage (85, 54, 41);
+// scoreKoalas = calcAverage (23, 34, 27);
+// console.log(scoreDolphins, scoreKoalas);
+// checkWinner(scoreDolphins, scoreKoalas);
+//////////////////////////////////
+
+// array
+const friend = ['Michael', 'steven', 'peter'];
+console.log(friend);
+
+// another way of define array
+
+const year = new Array(1981, 1984, 2008, 2020);
