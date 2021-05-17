@@ -179,11 +179,38 @@ console.log(friend);
 
 // another way of define array
 
-const year = new Array(1981, 1984, 2008, 2020);
+const y = new Array(1981, 1984, 2008, 2020);
 
-console.log(friend[0]);
-console.log(year[0]);
-console.log(friend[0] ,year [0]);
+// console.log(friend[0]);
+// console.log(year[0]);
+// console.log(friend[0] ,year [0]);
 
 console.log(friend.length);
 console.log(friend[friend.length -1]);
+// change content of array. mutate const with array
+friend[2] = 'jay';
+console.log(friend);
+
+// can't do this 
+// friend = ['bob', 'alice'];
+
+const firstName = 'faramarz';
+const lastName = 'bayat';
+const jonas = [firstName, lastName, 2021 - 1984, 'developer', friend];
+console.log(jonas);
+
+// Exercise
+const calcAge = function (birthYeah) {
+    return 2021 - birthYeah;
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1,age2,age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+
+console.log(ages);
