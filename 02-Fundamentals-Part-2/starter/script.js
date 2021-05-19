@@ -174,43 +174,80 @@
 //////////////////////////////////
 
 // array
-const friend = ['Michael', 'steven', 'peter' ]; 
-console.log(friend);
+// const friend = ['Michael', 'steven', 'peter' ]; 
+// console.log(friend);
 
 // another way of define array
 
-const y = new Array(1981, 1984, 2008, 2020);
+// const y = new Array(1981, 1984, 2008, 2020);
 
-// console.log(friend[0]);
-// console.log(year[0]);
-// console.log(friend[0] ,year [0]);
+// // console.log(friend[0]);
+// // console.log(year[0]);
+// // console.log(friend[0] ,year [0]);
 
-console.log(friend.length);
-console.log(friend[friend.length -1]);
+// console.log(friend.length);
+// console.log(friend[friend.length -1]);
 // change content of array. mutate const with array
-friend[2] = 'jay';
-console.log(friend);
+// friend[2] = 'jay';
+// console.log(friend);
 
 // can't do this 
 // friend = ['bob', 'alice'];
 
-const firstName = 'faramarz';
-const lastName = 'bayat';
-const jonas = [firstName, lastName, 2021 - 1984, 'developer', friend];
-console.log(jonas);
+// const firstName = 'faramarz';
+// const lastName = 'bayat';
+// const jonas = [firstName, lastName, 2021 - 1984, 'developer', friend];
+// console.log(jonas);
 
 // Exercise
-const calcAge = function (birthYeah) {
-    return 2021 - birthYeah;
+// const calcAge = function (birthYeah) {
+//     return 2021 - birthYeah;
+// }
+
+// const years = [1990, 1967, 2002, 2010, 2018];
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+// console.log(age1,age2,age3);
+
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+
+// console.log(ages);
+//////////////////////////
+// Array Method basic push
+
+const friend = ['Michael', 'steven', 'peter' ];
+const newLength = friend.push('jay'); 
+console.log(friend);
+console.log(newLength);
+
+//unshift method
+//Add elements
+friend.unshift('john');
+console.log(friend);
+
+//remove elements
+friend.pop();//last element
+const poped = friend.pop();
+console.log(poped);
+console.log(friend);
+
+friend.shift(); // first element
+// const shifted = friend.shift();
+// console.log(shifted);
+console.log(friend);
+
+console.log(friend.indexOf('steven'));
+
+console.log(friend.indexOf('frank'));
+
+//ES6 method include
+friend.push(23);
+console.log(friend.includes('steven'));
+console.log(friend.includes('bob'));
+console.log(friend.includes('23'));
+
+if (friend.includes('steven')) {
+    console.log('you have friend called steven');
 }
-
-const years = [1990, 1967, 2002, 2010, 2018];
-
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1,age2,age3);
-
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
-
-console.log(ages);
