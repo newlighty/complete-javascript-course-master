@@ -173,7 +173,7 @@
 // checkWinner(scoreDolphins, scoreKoalas);
 //////////////////////////////////
 
-// array
+// array.....................................................
 // const friend = ['Michael', 'steven', 'peter' ]; 
 // console.log(friend);
 
@@ -215,39 +215,63 @@
 
 // console.log(ages);
 //////////////////////////
-// Array Method basic push
+// Array Method basic push add  to last +
 
-const friend = ['Michael', 'steven', 'peter' ];
-const newLength = friend.push('jay'); 
-console.log(friend);
-console.log(newLength);
+// const friend = ['Michael', 'steven', 'peter' ];
+// const newLength = friend.push('jay'); 
+// console.log(friend);
+// console.log(newLength);
 
-//unshift method
-//Add elements
-friend.unshift('john');
-console.log(friend);
+// //unshift method
+// //Add elements to the first +
+// friend.unshift('john');
+// console.log(friend);
 
-//remove elements
-friend.pop();//last element
-const poped = friend.pop();
-console.log(poped);
-console.log(friend);
+// //remove elements - from last
+// friend.pop();//last element
+// const poped = friend.pop();
+// console.log(poped);
+// console.log(friend);
 
-friend.shift(); // first element
-// const shifted = friend.shift();
-// console.log(shifted);
-console.log(friend);
+// friend.shift(); // remove first element
+// // const shifted = friend.shift();
+// // console.log(shifted);
+// console.log(friend);
 
-console.log(friend.indexOf('steven'));
+// console.log(friend.indexOf('steven'));
 
-console.log(friend.indexOf('frank'));
+// console.log(friend.indexOf('frank'));
 
-//ES6 method include
-friend.push(23);
-console.log(friend.includes('steven'));
-console.log(friend.includes('bob'));
-console.log(friend.includes('23'));
+// //ES6 method include
+// friend.push(23);
+// console.log(friend.includes('steven'));
+// console.log(friend.includes('bob'));
+// console.log(friend.includes('23'));
 
-if (friend.includes('steven')) {
-    console.log('you have friend called steven');
-}
+// if (friend.includes('steven')) {
+//     console.log('you have friend called steven');
+// }
+
+
+ const calTip = function (bill) {
+     return bill >= 50  && bill <= 300 ? bill * 0.15 : bill * 0.2;
+   }
+ 
+// with arrow function
+// const calTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2; 
+
+// const bills = [125, 555, 44];
+// const tips =  [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips [2]];
+// console.log(bills, tips);
+//-------------------------------------------
+//Object intro///////////////////////////
+
+const jonasArray = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  ['Michael', 'Peter', 'steven']
+];
+
