@@ -275,3 +275,11 @@ const jonasArray = [
   ['Michael', 'Peter', 'steven']
 ];
 
+//define object
+const jonas = {
+firstName: 'jonas',
+lastName: 'Schmedtmann',
+age: 2037 - 1991,
+job: 'teacher',
+friends:  ['Michael', 'Peter', 'steven']
+}
