@@ -283,3 +283,49 @@ age: 2037 - 1991,
 job: 'teacher',
 friends:  ['Michael', 'Peter', 'steven']
 }
+
+console.log(jonas);
+// get property by .
+console.log(jonas.lastName);
+console.log(jonas.firstName);
+console.log(jonas.age);
+console.log(jonas.friends);
+console.log(jonas.job);
+
+// get property by []
+
+console.log(jonas['lastName']);
+// with this way we can use expression that creat value
+//both firstName and lastName have Name 
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+//exp 
+const interestedIn = prompt('what do you want to know about jonas? choose between firstName, lastName, age, job, and friends');
+// console.log(jonas[interestedIn]);
+
+// in this exp we get input from user and than return value 
+//like job ...etc and when we use jonas object we replace it with value we get from jonas object job = teacher or age 46😁
+
+// we use if for when use type somethings that not in the list
+
+if (jonas[interestedIn]) {
+  console.log(jonas[interestedIn]);
+ }else{
+   console.log('Wrong request! choose between firstName, lastName, age, job, and friends')
+ }
+
+jonas.location = 'iran';
+jonas['twitter'] = '@jonasschmedtman';
+console.log(jonas);
+
+//challenge 
+//"jonas has 3 friends, and his best friend is called Michael"
+
+
+
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friend, and his best friends is called ${jonas.friends[0]}`);
+
+// hear use `${jonas.firstName} to store name in it temporal literal and inside that using . object and for finding the number of friends i use array length and after that for finding best friend use array index the first one is best friend and so it is [0] ;
