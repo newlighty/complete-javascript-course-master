@@ -253,10 +253,10 @@
 // }
 
 
- const calTip = function (bill) {
-     return bill >= 50  && bill <= 300 ? bill * 0.15 : bill * 0.2;
-   }
- 
+// const calTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+
 // with arrow function
 // const calTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2; 
 
@@ -267,65 +267,107 @@
 //-------------------------------------------
 //Object intro///////////////////////////
 
-const jonasArray = [
-  'Jonas',
-  'Schmedtmann',
-  2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'steven']
-];
+// const jonasArray = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'steven']
+// ];
 
-//define object
+// //define object
+// const jonas = {
+// firstName: 'jonas',
+// lastName: 'Schmedtmann',
+// age: 2037 - 1991,
+// job: 'teacher',
+// friends:  ['Michael', 'Peter', 'steven']
+// }
+
+// console.log(jonas);
+// // get property by .
+// console.log(jonas.lastName);
+// console.log(jonas.firstName);
+// console.log(jonas.age);
+// console.log(jonas.friends);
+// console.log(jonas.job);
+
+// // get property by []
+
+// console.log(jonas['lastName']);
+// // with this way we can use expression that creat value
+// //both firstName and lastName have Name 
+// const nameKey = 'Name';
+// console.log(jonas['first' + nameKey]);
+// console.log(jonas['last' + nameKey]);
+
+// //exp 
+// const interestedIn = prompt('what do you want to know about jonas? choose between firstName, lastName, age, job, and friends');
+// // console.log(jonas[interestedIn]);
+
+// // in this exp we get input from user and than return value 
+// //like job ...etc and when we use jonas object we replace it with value we get from jonas object job = teacher or age 46😁
+
+// // we use if for when use type somethings that not in the list
+
+// if (jonas[interestedIn]) {
+//   console.log(jonas[interestedIn]);
+//  }else{
+//    console.log('Wrong request! choose between firstName, lastName, age, job, and friends')
+//  }
+
+// jonas.location = 'iran';
+// jonas['twitter'] = '@jonasschmedtman';
+// console.log(jonas);
+
+// //challenge 
+// //"jonas has 3 friends, and his best friend is called Michael"
+
+
+
+
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friend, and his best friends is called ${jonas.friends[0]}`);
+
+// // hear use `${jonas.firstName} to store name in it temporal literal and inside that using . object and for finding the number of friends i use array length and after that for finding best friend use array index the first one is best friend and so it is [0] ;
+////////////////////////Object-Method---------------------\\\\\\\\\\\\\\\\\\\\\\
+
 const jonas = {
-firstName: 'jonas',
-lastName: 'Schmedtmann',
-age: 2037 - 1991,
-job: 'teacher',
-friends:  ['Michael', 'Peter', 'steven']
-}
+  firstName: 'jonas',
+  lastName: 'Schmedtmann',
+  birthYeah: 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'steven'],
+  hasDriverlicense: false,
+  // we retrieve this from  birthYeah: 1991
+  // but hear means jonas this.age !
+  //this is expression
+  // calcAge: function (birthYeah) {
+  //   return 2037 - birthYeah;
+  // }
+  // function that attach to an object is method
+  // calcAge: function () {
+  //   console.log(this); //return array
+  //   return 2037 - this.birthYeah;
+  // }
+// challenge \\\\\\\\\\\\\\\\\\\\\\\\
 
-console.log(jonas);
-// get property by .
-console.log(jonas.lastName);
-console.log(jonas.firstName);
+// "jonas is a 46-year teacher and he has a/no driver's license"
+  calcAge: function () {
+   this.age = 2037 - this.birthYeah
+    return this.age;
+  },
+  getSummary: function () {
+     return `${this.firstName} is a ${this.calcAge()} -year old ${jonas.job}, and he has ${this.hasDriverlicense ? 'a' : 'no'} driver's licence.`
+  }
+
+};
+
+console.log(jonas.calcAge());
+// we must not repeat our self dry
+// console.log(jonas['calcAge'](1991));
+//alt + d select multiply curser;
 console.log(jonas.age);
-console.log(jonas.friends);
-console.log(jonas.job);
+console.log(jonas.age);
+console.log(jonas.age);
 
-// get property by []
-
-console.log(jonas['lastName']);
-// with this way we can use expression that creat value
-//both firstName and lastName have Name 
-const nameKey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
-
-//exp 
-const interestedIn = prompt('what do you want to know about jonas? choose between firstName, lastName, age, job, and friends');
-// console.log(jonas[interestedIn]);
-
-// in this exp we get input from user and than return value 
-//like job ...etc and when we use jonas object we replace it with value we get from jonas object job = teacher or age 46😁
-
-// we use if for when use type somethings that not in the list
-
-if (jonas[interestedIn]) {
-  console.log(jonas[interestedIn]);
- }else{
-   console.log('Wrong request! choose between firstName, lastName, age, job, and friends')
- }
-
-jonas.location = 'iran';
-jonas['twitter'] = '@jonasschmedtman';
-console.log(jonas);
-
-//challenge 
-//"jonas has 3 friends, and his best friend is called Michael"
-
-
-
-
-console.log(`${jonas.firstName} has ${jonas.friends.length} friend, and his best friends is called ${jonas.friends[0]}`);
-
-// hear use `${jonas.firstName} to store name in it temporal literal and inside that using . object and for finding the number of friends i use array length and after that for finding best friend use array index the first one is best friend and so it is [0] ;
+console.log(jonas.getSummary());
