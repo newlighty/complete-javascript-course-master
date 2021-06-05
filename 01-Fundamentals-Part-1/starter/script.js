@@ -26,13 +26,13 @@ console.log(typeof fuck);
 fuck = 1400;
 console.log(fuck);
 console.log(typeof fuck);
-we use let for declar varibale that we can change later and empty variable
+we use let for declare variable that we can change later and empty variable
 
 let age = 30;
 age = 31;
 
 
-and we use const for varible that are not changed 
+and we use const for variable that are not changed 
 
 const birthYear = 1991;
 birthYear = 1990; --> we can not do that it runs to error 
@@ -180,7 +180,7 @@ end of srtings===============
 // }
 // console.log(century);
 // -----------------------------
-//--chalange - 2--------------
+//--challenge - 2--------------
 // const markmass = 78;
 
 // const markheight = 1.69;
@@ -221,7 +221,7 @@ end of srtings===============
 // console.log('23' - '10' - 3);
 // //string converted to number with -
 // console.log ('23' * '2');
-// //mutltplay convert string to number and do the calculation
+// //multiply convert string to number and do the calculation
 // console.log('23' / '2');
 // console.log('23' > '18');
 

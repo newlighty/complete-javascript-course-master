@@ -331,13 +331,13 @@
 // // hear use `${jonas.firstName} to store name in it temporal literal and inside that using . object and for finding the number of friends i use array length and after that for finding best friend use array index the first one is best friend and so it is [0] ;
 ////////////////////////Object-Method---------------------\\\\\\\\\\\\\\\\\\\\\\
 
-const jonas = {
-  firstName: 'jonas',
-  lastName: 'Schmedtmann',
-  birthYeah: 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'steven'],
-  hasDriverlicense: false,
+// const jonas = {
+//   firstName: 'jonas',
+//   lastName: 'Schmedtmann',
+//   birthYeah: 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'steven'],
+//   hasDriverlicense: false,
   // we retrieve this from  birthYeah: 1991
   // but hear means jonas this.age !
   //this is expression
@@ -352,22 +352,63 @@ const jonas = {
 // challenge \\\\\\\\\\\\\\\\\\\\\\\\
 
 // "jonas is a 46-year teacher and he has a/no driver's license"
-  calcAge: function () {
-   this.age = 2037 - this.birthYeah
-    return this.age;
-  },
-  getSummary: function () {
-     return `${this.firstName} is a ${this.calcAge()} -year old ${jonas.job}, and he has ${this.hasDriverlicense ? 'a' : 'no'} driver's licence.`
+//   calcAge: function () {
+//    this.age = 2037 - this.birthYeah
+//     return this.age;
+//   },
+//   getSummary: function () {
+//      return `${this.firstName} is a ${this.calcAge()} -year old ${jonas.job}, and he has ${this.hasDriverlicense ? 'a' : 'no'} driver's licence.`
+//   }
+
+// };
+
+// console.log(jonas.calcAge());
+// // we must not repeat our self dry
+// // console.log(jonas['calcAge'](1991));
+// //alt + d select multiply curser;
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+
+// console.log(jonas.getSummary());
+
+
+// BMI = mass / height ** 2 = mass
+// / (height * height) (mass in kg and height in meter)
+// it say full name so i must use full name instead of firstName & lastName;
+
+  const mark = {
+    fullName: 'mark Miller',
+    mass: 78,
+    height: 1.69,
+    //we take data directly from object
+    calcBMI: function () {
+      this.bmi = this.mass / this.height ** 2 ;
+      return this.bmi;
+         }
   }
 
-};
+  // Mark.calcBMI();
+  // console.log(Mark.bmi);
+  const john = {
+   fullName: 'john Smith',
+   mass: 92,
+   height: 1.95,
+   calcBMI: function () {
+      this.bmi = this.mass / this.height ** 2 ;
+      return this.bmi;
+         }
+        }
+        
+        mark.calcBMI();
+        john.calcBMI();
+       
+        console.log(mark.bmi, john.bmi);
+ 
+        if(mark.bmi > john.bmi) {
+          console.log(`${mark.fullName}'s BMI(${mark.bmi}) is higher than ${john.fullName}'s BMI(${john.bmi})`)
+        } else if(john.bmi > mark.bmi) {
+          console.log(`${john.fullName}'s BMI(${mark.bmi}) is higher than ${mark.fullName}'s BMI(${john.bmi})`)
+        }
 
-console.log(jonas.calcAge());
-// we must not repeat our self dry
-// console.log(jonas['calcAge'](1991));
-//alt + d select multiply curser;
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
-
-console.log(jonas.getSummary());
+        //end of challenge of objects👍💖😁
