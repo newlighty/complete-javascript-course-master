@@ -377,38 +377,46 @@
 // / (height * height) (mass in kg and height in meter)
 // it say full name so i must use full name instead of firstName & lastName;
 
-  const mark = {
-    fullName: 'mark Miller',
-    mass: 78,
-    height: 1.69,
-    //we take data directly from object
-    calcBMI: function () {
-      this.bmi = this.mass / this.height ** 2 ;
-      return this.bmi;
-         }
-  }
+  // const mark = {
+  //   fullName: 'mark Miller',
+  //   mass: 78,
+  //   height: 1.69,
+  //   //we take data directly from object
+  //   calcBMI: function () {
+  //     this.bmi = this.mass / this.height ** 2 ;
+  //     return this.bmi;
+  //        }
+  // }
 
-  // Mark.calcBMI();
-  // console.log(Mark.bmi);
-  const john = {
-   fullName: 'john Smith',
-   mass: 92,
-   height: 1.95,
-   calcBMI: function () {
-      this.bmi = this.mass / this.height ** 2 ;
-      return this.bmi;
-         }
-        }
+  // // Mark.calcBMI();
+  // // console.log(Mark.bmi);
+  // const john = {
+  //  fullName: 'john Smith',
+  //  mass: 92,
+  //  height: 1.95,
+  //  calcBMI: function () {
+  //     this.bmi = this.mass / this.height ** 2 ;
+  //     return this.bmi;
+  //        }
+  //       }
         
-        mark.calcBMI();
-        john.calcBMI();
+  //       mark.calcBMI();
+  //       john.calcBMI();
        
-        console.log(mark.bmi, john.bmi);
+  //       console.log(mark.bmi, john.bmi);
  
-        if(mark.bmi > john.bmi) {
-          console.log(`${mark.fullName}'s BMI(${mark.bmi}) is higher than ${john.fullName}'s BMI(${john.bmi})`)
-        } else if(john.bmi > mark.bmi) {
-          console.log(`${john.fullName}'s BMI(${mark.bmi}) is higher than ${mark.fullName}'s BMI(${john.bmi})`)
-        }
+  //       if(mark.bmi > john.bmi) {
+  //         console.log(`${mark.fullName}'s BMI(${mark.bmi}) is higher than ${john.fullName}'s BMI(${john.bmi})`)
+  //       } else if(john.bmi > mark.bmi) {
+  //         console.log(`${john.fullName}'s BMI(${mark.bmi}) is higher than ${mark.fullName}'s BMI(${john.bmi})`)
+  //       }
 
         //end of challenge of objects👍💖😁
+
+
+        //----------------------Start of Loop --------------------\\
+
+        for (let rep = 1; rep <= 10 ; rep++) {
+         console.log(`i love faramarz ${rep}`);
+          
+        }
