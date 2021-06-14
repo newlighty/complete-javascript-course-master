@@ -414,9 +414,74 @@
         //end of challenge of objects👍💖😁
 
 
-        //----------------------Start of Loop --------------------\\
+        //----------------------Start of Loop --------------------\\ LoopingArrays Breaking and continuing
 
-        for (let rep = 1; rep <= 10 ; rep++) {
-         console.log(`i love faramarz ${rep}`);
+        // for (let rep = 1; rep <= 10 ; rep++) {
+        //  console.log(`i love faramarz ${rep}`);
           
-        }
+        // }
+
+
+        const jonasArray = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  ['Michael', 'Peter', 'steven'],
+  true,  '💖'
+];
+
+//calling array : console.log(jonas[0])  console.log(jonas[1]...etc) jonas [5] dose not exist ;it work yes for (let i = 0; i < 5; i++)  but what if we have more 5 or six or more it's not working ! so what we must do hard code every time and change value ? . we can do it dynamic like this jonasArray.length this means array function length calculate the lengths of array and than it add automatically to the for loop
+
+// for getting type of the jonasArray for learning exp:
+
+// const types = [];
+
+// for (let i = 0; i < jonasArray.length; i++) {
+//  // Reading from jonas array
+//   console.log(jonasArray[i], typeof jonasArray[i]);
+
+
+// //this give array type in one line
+// //filling types of array
+// // types[i] = typeof jonasArray[i];
+// //second way of doing that
+// types.push(typeof jonasArray[i]);
+// }
+   
+// console.log(types);
+//language programing born year😊
+// const years = [1995, 1990, 2014,2009, 2001, 2003, 1987, 1980, 2011, 2010, 1986 , 1972, 1958, 2012 , 1990];
+// /// we use loop to fill array
+// const ages = [];
+// //we fill empty ages with push method
+// for (let i = 0; i < years.length; i++){
+//  ages.push(2021 - years[i]);
+// }
+
+// console.log(ages);
+
+// continue and break 
+
+//continue
+
+// console.log('---فقط استرینگ----')
+// for (let i = 0; i < jonasArray.length; i++) {
+//   //this means keep strings and omit others and continue
+//   // and exit the code after reach string and the next line not executed
+//   if(typeof jonasArray[i] !== 'string') continue;
+//   console.log(jonasArray[i], typeof jonasArray[i]);
+
+// }
+
+//break
+
+// break terminate the loop after it executed 
+
+console.log('--- BREAK WITH NUMBER ---')
+for (let i = 0; i < jonasArray.length; i++) {
+  
+  if(typeof jonasArray[i] === 'number') break;
+  console.log(jonasArray[i], typeof jonasArray[i]);
+
+}
