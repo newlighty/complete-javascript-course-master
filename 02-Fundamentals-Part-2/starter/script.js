@@ -338,17 +338,17 @@
 //   job: 'teacher',
 //   friends: ['Michael', 'Peter', 'steven'],
 //   hasDriverlicense: false,
-  // we retrieve this from  birthYeah: 1991
-  // but hear means jonas this.age !
-  //this is expression
-  // calcAge: function (birthYeah) {
-  //   return 2037 - birthYeah;
-  // }
-  // function that attach to an object is method
-  // calcAge: function () {
-  //   console.log(this); //return array
-  //   return 2037 - this.birthYeah;
-  // }
+// we retrieve this from  birthYeah: 1991
+// but hear means jonas this.age !
+//this is expression
+// calcAge: function (birthYeah) {
+//   return 2037 - birthYeah;
+// }
+// function that attach to an object is method
+// calcAge: function () {
+//   console.log(this); //return array
+//   return 2037 - this.birthYeah;
+// }
 // challenge \\\\\\\\\\\\\\\\\\\\\\\\
 
 // "jonas is a 46-year teacher and he has a/no driver's license"
@@ -377,59 +377,59 @@
 // / (height * height) (mass in kg and height in meter)
 // it say full name so i must use full name instead of firstName & lastName;
 
-  // const mark = {
-  //   fullName: 'mark Miller',
-  //   mass: 78,
-  //   height: 1.69,
-  //   //we take data directly from object
-  //   calcBMI: function () {
-  //     this.bmi = this.mass / this.height ** 2 ;
-  //     return this.bmi;
-  //        }
-  // }
+// const mark = {
+//   fullName: 'mark Miller',
+//   mass: 78,
+//   height: 1.69,
+//   //we take data directly from object
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2 ;
+//     return this.bmi;
+//        }
+// }
 
-  // // Mark.calcBMI();
-  // // console.log(Mark.bmi);
-  // const john = {
-  //  fullName: 'john Smith',
-  //  mass: 92,
-  //  height: 1.95,
-  //  calcBMI: function () {
-  //     this.bmi = this.mass / this.height ** 2 ;
-  //     return this.bmi;
-  //        }
-  //       }
-        
-  //       mark.calcBMI();
-  //       john.calcBMI();
-       
-  //       console.log(mark.bmi, john.bmi);
- 
-  //       if(mark.bmi > john.bmi) {
-  //         console.log(`${mark.fullName}'s BMI(${mark.bmi}) is higher than ${john.fullName}'s BMI(${john.bmi})`)
-  //       } else if(john.bmi > mark.bmi) {
-  //         console.log(`${john.fullName}'s BMI(${mark.bmi}) is higher than ${mark.fullName}'s BMI(${john.bmi})`)
-  //       }
+// // Mark.calcBMI();
+// // console.log(Mark.bmi);
+// const john = {
+//  fullName: 'john Smith',
+//  mass: 92,
+//  height: 1.95,
+//  calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2 ;
+//     return this.bmi;
+//        }
+//       }
 
-        //end of challenge of objects👍💖😁
+//       mark.calcBMI();
+//       john.calcBMI();
 
+//       console.log(mark.bmi, john.bmi);
 
-        //----------------------Start of Loop --------------------\\ LoopingArrays Breaking and continuing
+//       if(mark.bmi > john.bmi) {
+//         console.log(`${mark.fullName}'s BMI(${mark.bmi}) is higher than ${john.fullName}'s BMI(${john.bmi})`)
+//       } else if(john.bmi > mark.bmi) {
+//         console.log(`${john.fullName}'s BMI(${mark.bmi}) is higher than ${mark.fullName}'s BMI(${john.bmi})`)
+//       }
 
-        // for (let rep = 1; rep <= 10 ; rep++) {
-        //  console.log(`i love faramarz ${rep}`);
-          
-        // }
+//end of challenge of objects👍💖😁
 
 
-        const jonasArray = [
-  'Jonas',
-  'Schmedtmann',
-  2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'steven'],
-  true,  '💖'
-];
+//----------------------Start of Loop --------------------\\ LoopingArrays Breaking and continuing
+
+// for (let rep = 1; rep <= 10 ; rep++) {
+//  console.log(`i love faramarz ${rep}`);
+
+// }
+
+
+//         const jonasArray = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'steven'],
+//   true,  '💖'
+// ];
 
 //calling array : console.log(jonas[0])  console.log(jonas[1]...etc) jonas [5] dose not exist ;it work yes for (let i = 0; i < 5; i++)  but what if we have more 5 or six or more it's not working ! so what we must do hard code every time and change value ? . we can do it dynamic like this jonasArray.length this means array function length calculate the lengths of array and than it add automatically to the for loop
 
@@ -448,7 +448,7 @@
 // //second way of doing that
 // types.push(typeof jonasArray[i]);
 // }
-   
+
 // console.log(types);
 //language programing born year😊
 // const years = [1995, 1990, 2014,2009, 2001, 2003, 1987, 1980, 2011, 2010, 1986 , 1972, 1958, 2012 , 1990];
@@ -478,10 +478,93 @@
 
 // break terminate the loop after it executed 
 
-console.log('--- BREAK WITH NUMBER ---')
-for (let i = 0; i < jonasArray.length; i++) {
-  
-  if(typeof jonasArray[i] === 'number') break;
-  console.log(jonasArray[i], typeof jonasArray[i]);
+// console.log('--- BREAK WITH NUMBER ---')
+// for (let i = 0; i < jonasArray.length; i++) {
 
+//   if(typeof jonasArray[i] === 'number') break;
+//   console.log(jonasArray[i], typeof jonasArray[i]);
+
+// }
+
+
+// Looping backwards and Loops in Loops.
+
+// Looping backwards 
+
+//    const jonas = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'steven'],
+//   '💖'
+// ];
+
+// for (let i = jonas.length -1; i >= 0 ; i--) {
+//   console.log(i , jonas[i]);
+
+// }
+
+// Loops in Loops.
+
+// for (let exercise = 0; exercise < 6;  exercise++) {
+//  console.log(`-------------Starting exercise ${exercise}`);
+
+// //if u want to see exercise number in each sub loop we can 
+
+// //  for (let rep = 1; rep < 6; rep++) {
+// //    console.log(`i'm going win this ${rep}🏆 `);
+// //  }
+
+
+// for (let rep = 1; rep < 6; rep++) {
+//   console.log(` Exercise ${exercise} i'm going win this ${rep}🏆 `);
+// }
+
+// }
+
+////////////////////////////// While loop \\\\\\\\\\\\\\\\\\\\\\\\\
+
+//normal loop
+// for (let rep = 1; rep <= 10; rep++){
+
+//  console.log(`normal loop ---> i'm going to win this 🎉`);
+// }
+
+// //  While loop
+
+// let rep = 1;
+// while (rep <= 10) {
+// console.log(`while loop --->  i'm going to win this 🎉`);
+// rep++;
+// }
+
+// we use loop for cases that need specific count  and need counter
+
+// we use while for case that does not need counter or amount of counting not specific
+
+//this give us a random with decimal
+// let dice = Math.random() * 6
+// console.log(dice);
+
+
+
+//  let dice = Math.trunc(Math.random() * 6) + 1;
+
+// while (dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) console.log('Loop is about to end...');
+// }
+
+// we start with making random number and if the number are different than six we enter loop and than log into the console and than we creat another Loop and it check if it is six or not if it is six it stop and print the message in if condition and if not continue untie it get to six.and terminate the loop
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`you rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log(`Loop is about to end  ${dice} ✨🎉😘🌈`);
 }
+
+// when you do need loop without counter use while when beforehand you do not know how many iterations the loop will have
