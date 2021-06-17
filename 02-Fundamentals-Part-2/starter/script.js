@@ -422,7 +422,8 @@
 // }
 
 
-//         const jonasArray = [
+//   
+//  const jonasArray = [
 //   'Jonas',
 //   'Schmedtmann',
 //   2037 - 1991,
@@ -505,7 +506,7 @@
 
 // }
 
-// Loops in Loops.
+// Loops in Loops---------------.
 
 // for (let exercise = 0; exercise < 6;  exercise++) {
 //  console.log(`-------------Starting exercise ${exercise}`);
@@ -547,8 +548,6 @@
 // let dice = Math.random() * 6
 // console.log(dice);
 
-
-
 //  let dice = Math.trunc(Math.random() * 6) + 1;
 
 // while (dice !== 6) {
@@ -559,12 +558,49 @@
 
 // we start with making random number and if the number are different than six we enter loop and than log into the console and than we creat another Loop and it check if it is six or not if it is six it stop and print the message in if condition and if not continue untie it get to six.and terminate the loop
 
-let dice = Math.trunc(Math.random() * 6) + 1;
+// let dice = Math.trunc(Math.random() * 6) + 1;
 
-while (dice !== 6) {
-  console.log(`you rolled a ${dice}`);
-  dice = Math.trunc(Math.random() * 6) + 1;
-  if (dice === 6) console.log(`Loop is about to end  ${dice} ✨🎉😘🌈`);
-}
+// while (dice !== 6) {
+//   console.log(`you rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) console.log(`Loop is about to end  ${dice} ✨🎉😘🌈`);
+// }
 
 // when you do need loop without counter use while when beforehand you do not know how many iterations the loop will have
+
+
+
+const calTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+for (let i = 0; i < bills.length; i++) {
+// in this line calTip calculate the the arrays in bills in a loop
+const tip = calTip(bills[i]);
+// this fills the tips array for each loop
+tips.push(tip);
+
+totals.push(tip + bills[i]);
+}
+
+console.log(bills, tips, totals);
+// sme experiment of
+console.log(`bills ${bills}, tips ${tips},totals ${totals}`);
+// bounce part
+const calcAverage = function(arr){
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    // sum = sum + arr[i] short hand below
+    sum += arr[i];
+      }
+      
+      return sum /arr.length;
+}
+console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
+
+ 
